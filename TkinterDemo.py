@@ -1,3 +1,4 @@
+#This is desktop pplication development
 from tkinter import *
 import mysql.connector
 import tkinter.messagebox as msg
