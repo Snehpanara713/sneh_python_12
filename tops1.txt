@@ -1,0 +1,2 @@
+This is file management demo using python.
+This file is now appended using append mode.

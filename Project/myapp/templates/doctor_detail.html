@@ -1,0 +1,69 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <body> 
+
+   
+
+    <!--=========== BEGAIN Home Blog SECTION ================-->
+    <section id="homeBLog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="homBlog-area">
+             <!-- Start Service Title -->
+              <div class="section-heading">
+                <br><br><br>
+                <h2>News From Blog</h2>
+                <div class="line"></div>
+              </div> 
+              <!-- Start Home Blog Content -->
+              <div class="homeBlog-content">
+                <div class="row">
+
+                  <!-- Start Single Blog -->
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="single-Blog">
+                      <div class="single-blog-left">
+                        
+                      </div>
+                      <div class="single-blog-right">
+                        <div class="blog-img">
+                          <figure class="blog-figure">
+                           <a href="#"><img src="{{doctor.doctor_picture.url}}" alt="img" style="width: 250px;height: 300px;"></a>
+                            <span class="image-effect"></span>
+                          </figure>
+                        </div>
+                        <div class="blog-author">
+                          <ul>
+                            <li>By <a href="#">Dr. {{doctor.doctor.fname}}</a></li>
+                            <li>In <a href="#">{{doctor.doctor_speciality}}</a></li>
+                          </ul>
+                        </div>
+                        <div class="blog-content">
+                          <h2>Start Time : {{doctor.doctor_start_time}}</h2>
+                          <h2>End Time : {{doctor.doctor_end_time}}</h2>
+                          <h2>Fees : {{doctor.doctor_fees}}</h2>
+                          <div class="readmore_area">
+                            <a href="{% url 'book_appointment' pk=doctor.pk %}" data-hover="Proceed Payment"><span>Book Appointment</span></a>                
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== End Home Blog SECTION ================-->
+
+  </body>
+</html>
+{% endblock %}

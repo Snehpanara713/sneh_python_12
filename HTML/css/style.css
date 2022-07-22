@@ -1,0 +1,16 @@
+.a1
+		{
+			background-color: cyan;
+			margin-top: 100px;
+			margin-right: 100px;
+			margin-bottom: 100px;
+			margin-left: 100px;
+		}
+		.a2
+		{
+			background-color: cyan;
+			padding-top: 100px;
+			padding-right: 100px;
+			padding-bottom: 100px;
+			padding-left: 100px;
+		}

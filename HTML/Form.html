@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="js/validation.js">
+	</script>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<form name="frm" method="post" action="">
+	<table cellpadding="5px" cellspacing="5px">
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="fname" onblur="checkFname();"></td>
+			<td><span id="fname"></span></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="lname"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="email" onblur="checkEmail();"></td>
+			<td><span id="email"></span></td>
+		</tr>
+		<tr>
+			<td>Mobile</td>
+			<td><input type="text" name="mobile" onblur="checkMobile();"></td>
+			<td><span id="mobile"></span></td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td><textarea rows="5" cols="21" name="address"></textarea></td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female
+			</td>
+		</tr>
+		<tr>
+			<td>Hobby</td>
+			<td>
+				<input type="checkbox" name="hobby" value="music">Music<br>
+				<input type="checkbox" name="hobby" value="dance">Dance<br>
+				<input type="checkbox" name="hobby" value="painting">Painting<br>
+				<input type="checkbox" name="hobby" value="reading">Reading
+			</td>
+		</tr>
+		<tr>
+			<td>Education</td>
+			<td>
+				<select name="education">
+					<option>---Select Education---</option>
+					<option value="10th">10th</option>
+					<option value="12th">12th</option>
+					<option value="BE">BE</option>
+					<option value="BCA">BCA</option>
+					<option value="B.Tech">B.Tech</option>
+					<option value="ME">ME</option>
+					<option value="MCA">MCA</option>
+					<option value="M.Tech">M.Tech</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Resume</td>
+			<td><input type="file" name="resume"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="password" onblur="checkPassword();"></td>
+			<td><span id="password"></span></td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type="password" name="cpassword" onblur="checkCpassword();">
+			</td>
+			<td><span id="cpassword"></span></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" name="action" value="SUBMIT" class="btn btn-link">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
